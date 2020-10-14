@@ -14,7 +14,7 @@ git add -A
 git commit -m 'deployed site'
 
 # if you are deploying to https://<USERNAME>.github.io
- git push -f git@github.com:garrettmflynn/on-memory-neurotechnologies.git master:gh-pages
+ git push -f git@github.com:on-memory-neurotechnologies/on-memory-neurotechnologies.github.io.git master:gh-pages
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
