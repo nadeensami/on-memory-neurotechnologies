@@ -1,6 +1,8 @@
 # On Memory Neurotechnologies
 An interactive article on memory neurotechnologies created for the 2020 NeuroNexus Design Competition
 
+![On Memory Neurotechnologies Architecture](assets/on_memory_neurotechnologies.png)
+
 ## Introduction
 It is becoming increasingly accepted that user-centered design is critical for the 
 development of effective neurotechnology devices. However, researchers remain 
