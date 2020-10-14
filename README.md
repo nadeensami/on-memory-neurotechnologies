@@ -38,6 +38,7 @@ then organize such feedback on a researcher dashboard for qualitative analysis.
 6. Conclusion
 
 ## Contributors
+<div style="display: flex; flex-wrap: wrap">
 <img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
 <img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
 <img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
@@ -48,7 +49,7 @@ then organize such feedback on a researcher dashboard for qualitative analysis.
 <img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
 <img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
 <img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
-
+</div>
 
 ## Appendix: Idyll Documentation
  
