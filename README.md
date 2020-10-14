@@ -1,14 +1,44 @@
 # On Memory Neurotechnologies
 An interactive article on memory neurotechnologies created for the 2020 NeuroNexus Design Competition
+ 
+## Contributors
+<div style="display: flex; flex-wrap: wrap">
+<img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
+<img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
+<img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
+<img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
+<img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
+<img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
+<img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
+<img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
+<img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
+<img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
+</div>
 
 ## Goals
 1. Create an interactive article that explains the hippocampal memory prosthesis being developed at the USC Neural Modeling and Computation Lab.
 2. Deploy this article for gathering qualitative research on reader (e.g. patient and public) perspectives on future cognitive neurotechnologies. 
 3. Release preliminary design recommendations for such devices.
 
+## Project Requirements
+
 ![On Memory Neurotechnologies Architecture](assets/on_memory_neurotechnologies.png)
 
-## Introduction
+### Article Outline
+1. Introduction to Cognition and Memory Disorders
+- Inability to encode new memories
+2. The Memory Prosthesis
+- History and theory
+- Math
+3. The Experimental Paradigm
+- Experiential walkthrough
+4. The Results
+- See (Hampson et al. 2018)
+5. The Future User Experience
+- The need for qualitative research
+6. Conclusion
+
+## Preamble
 It is becoming increasingly accepted that user-centered design is critical for the 
 development of effective neurotechnology devices. However, researchers remain 
 skeptical about using qualitative feedback to guide low-level technical decisions 
@@ -27,36 +57,6 @@ then organize such feedback on a researcher dashboard for qualitative analysis.
  We will launch this website at the conclusion of the 2020 NeuroNexus competition 
  and leverage user feedback to create design recommendations for the future of 
  cognitive neurostimulation.
- 
-## For NeuroNexus Innovators
-
-### Project Outline
-1. Introduction to Cognition and Memory Disorders
-- Inability to encode new memories
-2. The Memory Prosthesis
-- History and theory
-- Math
-3. The Experimental Paradigm
-- Experiential walkthrough
-4. The Results
-- See (Hampson et al. 2018)
-5. The Future User Experience
-- The need for qualitative research
-6. Conclusion
-
-## Contributors
-<div style="display: flex; flex-wrap: wrap">
-<img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
-<img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
-<img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
-<img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
-<img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
-<img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
-<img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
-<img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
-<img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
-<img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
-</div>
 
 ## Appendix: Idyll Documentation
  
