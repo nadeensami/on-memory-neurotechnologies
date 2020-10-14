@@ -1,0 +1,39 @@
+[meta title:"On Memory Neurotechnologies" description:"Short description of your project" /]
+
+[Header
+  fullWidth:true
+  title:"On Memory Neurotechnologies"
+  subtitle:"An interactive blog on memory neurotechnologies created for the 2020 NeuroNexus Design Competition"
+  author:"2020 NeuroNexus Team"
+  authorLink:"https://neuro-nexus.ca/challenge-details/On-Memory-Neurotechnologies"
+  date:`(new Date()).toDateString()`
+  background:"#111111"
+  color:"#ffffff"
+   /]
+
+It is becoming increasingly accepted that user-centered design is critical for the
+development of effective neurotechnology devices. However, researchers remain
+skeptical about using qualitative feedback to guide low-level technical decisions
+for early-stage devices. We will evaluate the effectiveness of interactive media to
+source useful feedback from non-expert stakeholders (i.e. patients and the public)
+on memory neurotechnologies—particularly our own proof-of-concept neurostimulation
+device for restoring memory function in dementia.
+
+We will design and produce an interactive explanation of our hippocampal memory
+prosthesis. This will take the form of an interactive website
+(e.g. [On Particle Physics](https://parametric.press/issue-01/on-particle-physics/))
+that contains explorable explanations of Alzheimer’s disease, brain stimulation
+therapies, and our neurostimulation device for memory restoration.
+Our website will collect reader feedback through embedded feedback forms,
+then organize such feedback on a researcher dashboard for qualitative analysis.
+ We will launch this website at the conclusion of the 2020 NeuroNexus competition
+ and leverage user feedback to create design recommendations for the future of
+ cognitive neurostimulation.
+
+[hr /]
+
+# Posts
+
+* [Example Post 1](./post-1/)
+* [Memory Neurotechnologies](./memory-neurotechnologies/)
+
