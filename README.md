@@ -2,7 +2,7 @@
 An interactive article on memory neurotechnologies created for the 2020 NeuroNexus Design Competition
 
 ## Goals
-1. Create an interactive article that introduces the hippocampal memory prosthesis being developed at the USC Neural Modeling and Computation Lab.
+1. Create an interactive article that explains the hippocampal memory prosthesis being developed at the USC Neural Modeling and Computation Lab.
 2. Deploy this article for gathering qualitative research on reader (e.g. patient and public) perspectives on future cognitive neurotechnologies. 
 3. Release preliminary design recommendations for such devices.
 
