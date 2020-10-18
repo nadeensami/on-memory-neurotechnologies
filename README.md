@@ -5,8 +5,8 @@ An interactive article on memory neurotechnologies created for the 2020 NeuroNex
 <div style="display: flex; flex-wrap: wrap">
 <img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
 <img src="https://avatars2.githubusercontent.com/u/24964915?s=400&u=581088086d4770c90990ed8e12e0363d9d5bde7a&v=4" width="75">
-<img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
-<img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
+<img src="https://avatars3.githubusercontent.com/u/43281502?s=400&u=ff4d9c231fc5429fccd088b0f5fddf52a1d91416&v=4" width="75">
+<img src="https://avatars2.githubusercontent.com/u/71192999?s=400&v=4" width="75">
 <img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
 <img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
 <img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75">
