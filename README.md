@@ -10,6 +10,8 @@ source useful feedback from non-expert stakeholders (i.e. patients and the publi
 on memory neurotechnologies—particularly our own proof-of-concept neurostimulation 
 device for restoring memory function in dementia.
 
+![On Memory Neurotechnologies Architecture](assets/on_memory_neurotechnologies.png)
+
 We will design and produce an interactive explanation of our hippocampal memory 
 prosthesis. This will take the form of an interactive website 
 (e.g. [On Particle Physics](https://parametric.press/issue-01/on-particle-physics/)) 
@@ -20,15 +22,6 @@ then organize such feedback on a researcher dashboard for qualitative analysis.
  We will launch this website at the conclusion of the 2020 NeuroNexus competition 
  and leverage user feedback to create design recommendations for the future of 
  cognitive neurostimulation.
-
-## Goals
-1. Create an interactive article that explains the hippocampal memory prosthesis being developed at the USC Neural Modeling and Computation Lab.
-2. Deploy this article for gathering qualitative research on reader (e.g. patient and public) perspectives on future cognitive neurotechnologies. 
-3. Release preliminary design recommendations for such devices.
-
-## Project Requirements
-
-![On Memory Neurotechnologies Architecture](assets/on_memory_neurotechnologies.png)
 
 ## Contributors
 <div style="display: flex; flex-wrap: wrap">
