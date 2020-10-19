@@ -21,20 +21,6 @@ An interactive article on memory neurotechnologies created for the 2020 NeuroNex
 
 ![On Memory Neurotechnologies Architecture](assets/on_memory_neurotechnologies.png)
 
-### Article Outline
-1. Introduction to Cognition and Memory Disorders
-- Inability to encode new memories
-2. The Memory Prosthesis
-- History and theory
-- Math
-3. The Experimental Paradigm
-- Experiential walkthrough
-4. The Results
-- See (Hampson et al. 2018)
-5. The Future User Experience
-- The need for qualitative research
-6. Conclusion
-
 ## Preamble
 It is becoming increasingly accepted that user-centered design is critical for the 
 development of effective neurotechnology devices. However, researchers remain 
