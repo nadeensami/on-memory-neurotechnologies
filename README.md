@@ -35,7 +35,7 @@ then organize such feedback on a researcher dashboard for qualitative analysis.
 </div>
 
 
-## Appendix: Idyll Documentation
+# Appendix: Idyll Documentation
  
 ### Quick Start
 * The multipage template uses an index, or main, page (in this directory) alongside multiple sub-pages (in the `posts` directory).  
