@@ -12,15 +12,6 @@ An interactive article on memory neurotechnologies created for the 2020 NeuroNex
 <a href='#'><img src="https://ca.slack-edge.com/T01C0T8HXCK-U01CBH26LHK-3ab52bb124b5-192" width="75"></a>
 </div>
 
-## Goals
-1. Create an interactive article that explains the hippocampal memory prosthesis being developed at the USC Neural Modeling and Computation Lab.
-2. Deploy this article for gathering qualitative research on reader (e.g. patient and public) perspectives on future cognitive neurotechnologies. 
-3. Release preliminary design recommendations for such devices.
-
-## Project Requirements
-
-![On Memory Neurotechnologies Architecture](assets/on_memory_neurotechnologies.png)
-
 ## Preamble
 It is becoming increasingly accepted that user-centered design is critical for the 
 development of effective neurotechnology devices. However, researchers remain 
@@ -40,6 +31,16 @@ then organize such feedback on a researcher dashboard for qualitative analysis.
  We will launch this website at the conclusion of the 2020 NeuroNexus competition 
  and leverage user feedback to create design recommendations for the future of 
  cognitive neurostimulation.
+
+## Goals
+1. Create an interactive article that explains the hippocampal memory prosthesis being developed at the USC Neural Modeling and Computation Lab.
+2. Deploy this article for gathering qualitative research on reader (e.g. patient and public) perspectives on future cognitive neurotechnologies. 
+3. Release preliminary design recommendations for such devices.
+
+## Project Requirements
+
+![On Memory Neurotechnologies Architecture](assets/on_memory_neurotechnologies.png)
+
 
 ## Appendix: Idyll Documentation
  
