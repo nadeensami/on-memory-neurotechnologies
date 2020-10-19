@@ -1,7 +1,5 @@
 # On Memory Neurotechnologies
-An interactive article on memory neurotechnologies created for the 2020 NeuroNexus Design Competition
 
-## Preamble
 It is becoming increasingly accepted that user-centered design is critical for the 
 development of effective neurotechnology devices. However, researchers remain 
 skeptical about using qualitative feedback to guide low-level technical decisions 
