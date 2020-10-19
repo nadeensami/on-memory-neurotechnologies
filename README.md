@@ -1,16 +1,5 @@
 # On Memory Neurotechnologies
 An interactive article on memory neurotechnologies created for the 2020 NeuroNexus Design Competition
- 
-## Contributors
-<div style="display: flex; flex-wrap: wrap">
-<a href='https://github.com/GarrettMFlynn' target="_blank"><img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75"></a>
-<a href='https://github.com/kcheema1' target="_blank"><img src="https://avatars2.githubusercontent.com/u/24964915?s=400&u=581088086d4770c90990ed8e12e0363d9d5bde7a&v=4" width="75"></a>
-<a href='https://github.com/eugene-lok'><img src="https://avatars3.githubusercontent.com/u/43281502?s=400&u=ff4d9c231fc5429fccd088b0f5fddf52a1d91416&v=4" width="75"></a>
-<a href='https://github.com/nadeensami' target="_blank"><img src="https://ca.slack-edge.com/T01C0T8HXCK-U01C6PKEL11-d9146fb835b8-192" width="75"></a>
-<a href='https://github.com/ShwetaSridharan' target="_blank"><img href='https://github.com/ShwetaSridharan' src="https://avatars2.githubusercontent.com/u/43153276?s=400&v=4" width="75"></a>
-<a href='#'><img src="https://ca.slack-edge.com/T01C0T8HXCK-U01CCG4CF8A-16d7b65c63ec-192" width="75"></a>
-<a href='#'><img src="https://ca.slack-edge.com/T01C0T8HXCK-U01CBH26LHK-3ab52bb124b5-192" width="75"></a>
-</div>
 
 ## Preamble
 It is becoming increasingly accepted that user-centered design is critical for the 
@@ -40,6 +29,17 @@ then organize such feedback on a researcher dashboard for qualitative analysis.
 ## Project Requirements
 
 ![On Memory Neurotechnologies Architecture](assets/on_memory_neurotechnologies.png)
+
+## Contributors
+<div style="display: flex; flex-wrap: wrap">
+<a href='https://github.com/GarrettMFlynn' target="_blank"><img src="https://avatars0.githubusercontent.com/u/46533749?s=400&u=54a11e32773161f0e64fe2d6aa72a9b1c2a40477&v=4" width="75"></a>
+<a href='https://github.com/kcheema1' target="_blank"><img src="https://avatars2.githubusercontent.com/u/24964915?s=400&u=581088086d4770c90990ed8e12e0363d9d5bde7a&v=4" width="75"></a>
+<a href='https://github.com/eugene-lok'><img src="https://avatars3.githubusercontent.com/u/43281502?s=400&u=ff4d9c231fc5429fccd088b0f5fddf52a1d91416&v=4" width="75"></a>
+<a href='https://github.com/nadeensami' target="_blank"><img src="https://ca.slack-edge.com/T01C0T8HXCK-U01C6PKEL11-d9146fb835b8-192" width="75"></a>
+<a href='https://github.com/ShwetaSridharan' target="_blank"><img href='https://github.com/ShwetaSridharan' src="https://avatars2.githubusercontent.com/u/43153276?s=400&v=4" width="75"></a>
+<a href='#'><img src="https://ca.slack-edge.com/T01C0T8HXCK-U01CCG4CF8A-16d7b65c63ec-192" width="75"></a>
+<a href='#'><img src="https://ca.slack-edge.com/T01C0T8HXCK-U01CBH26LHK-3ab52bb124b5-192" width="75"></a>
+</div>
 
 
 ## Appendix: Idyll Documentation
