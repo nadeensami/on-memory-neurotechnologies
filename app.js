@@ -14,25 +14,14 @@ var server = require('http').createServer(app);
 //CORS
 app.use(require("cors")()) // allow Cross-domain requests 
 
-//Websockets
-var io = require('socket.io')(server);
-
 // MongoDB
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://default-user:JgMmIChJd7IoyOJY@cluster0.bdgxr.mongodb.net/test?retryWrites=true&w=majority";
-app.set('mongo_url', uri);
-let submission_db;
-let chat_db;
-let collection;
-let collectionChunks;
-MongoClient.connect(uri, { useUnifiedTopology: true })
+const url = "mongodb+srv://default-user:JgMmIChJd7IoyOJY@cluster0.bdgxr.mongodb.net/on-memory-neurotechnologies?retryWrites=true&w=majority";
+
+MongoClient.connect(url, { useUnifiedTopology: true })
   .then(client => {
     app.set('mongo_client', client);
     console.log('Connected to Database')
-    submission_db = client.db("brains-and-games").collection("submissions");
-    chat_db = client.db("livewire").collection("chat");
-    collection = client.db("brains-and-games").collection('photos.files');    
-    collectionChunks = client.db("brains-and-games").collection('photos.chunks');
   })
 
 // Listen to Port
@@ -60,28 +49,6 @@ app.use(function(req, res, next) {
 // Set Routes
 const initRoutes = require("./routes/web");
 initRoutes(app);
-
-// Listen for Websocket Connections
-io.on('connection', (socket) => {
-  console.log('new connection: ' + socket.id);
-
-  socket.on('bci',bciSignal)
-
-  function bciSignal(data){
-      socket.broadcast.emit('bci', data)
-  }
-
-  socket.on('chat message', (msg) => {
-    io.emit('chat message', msg);
-    console.log('msg: ' + msg) 
-    chat_db.insertOne(
-          { "msg" : msg,
-            "sender" : socket.id,
-            "timestamp" : Date.now(),
-          }
-      )
-  });
-});
 
 // error handlers
 

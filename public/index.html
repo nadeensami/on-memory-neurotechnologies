@@ -1,97 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/site.css">
-    <title>Games List — Brains@Play</title>
+    <title>Database Test — On Memory Neurotechnologies</title>
     <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script type="text/javascript" src="js/site.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
 </head>
-<body onload='displaySubmissions()'>
+
+<body>
 <div id="app">
     <div id="nav" class="bar">
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="game-list.html"  class="current">Game List</a>
-        <a href="competition.html">Competition</a>
-        <a href="curriculum.html">Curriculum</a>
+        <a href="query.html">User Queries</a>
     </div>
-    <div class="break"></div>
     <div class="head bar">
-        <h1>Game List</h1>
-        <h3>Brains@Play</h3>
+        <h1>On Memory Neurotechnologies</h1>
+        <h3>An interactive article on memory prostheses—and how you can help design them</h3>
     </div>
-    <div class="break"></div>
-    <section id='content'>
-        <form id='submission'
-              enctype="multipart/form-data"
-        >
-            <div id="submitted-games"></div>
-            <div id="get_img" class="form-section">
-                <h4>Get Submission</h4>
+    <section>
+        <form id="feedback">
+            <div id="team_sub" class="form-section">
+                <h2>Section</h2>
                 <div class="break"></div>
-                <input type="text" id="gameinput" name="gameinput" value="" placeholder='Try "DARKROOM"'/>
+                <h4>Email Address</h4>
+                <div class="break"></div>
+                <i>We will not solicit you via email. This is only to create a reliable link between you and your data.</i>
+                <div class="break"></div>
+                <input id="reader" type="text"  name="reader" value=""/>
+                <div class="break"></div>
+                <h4>Who Are You?</h4>
+                <div class="break"></div>
+                <select id="reader-type" name="who">
+                    <option value="patient">Patient</option>
+                    <option value="public">General Public</option>
+                </select>
+                <div class="break"></div>
+                <h4>Question 1</h4>
+                <div class="break"></div>
+                <i>Details</i>
+                <div class="break"></div>
+                <textarea rows="2" maxlength="300" cols="20" name="question-1" wrap="hard" value=""></textarea>
+                <div class="break"></div>
+                <h4>Question 1</h4>
+                <div class="break"></div>
+                <i>Details</i>
+                <div class="break"></div>
+                <input type="text"  name="question-2" value=""/>
             </div>
-            <button id="SubmitGame" type="submit" form="submission" value="GetFile"><div class="icon"><i class="fas fa-paper-plane fa-2x"></i></div>Get Submission</button>
+
+            <div id="consent" class="form-section">
+                <h3>To submit your feedback, you need to agree to let us use this data for research purposes by selecting the following check-box:</h3>
+                <div id="agree">
+                    <input type="checkbox" name="consent"><p> I consent to having my responses recorded for research</p>
+                </div>
+            </div>
         </form>
+        <button id="submit" class="form-button" type="submit" form="feedback" value="Submit Responses"><div class="icon"><i class="fas fa-paper-plane fa-2x"></i></div>Submit Responses</button>
     </section>
 </div>
-
 <script>
 
-    let url = "https://brainsatplay.azurewebsites.net"
-    // let url = "http://localhost"
-
-    // Dispay Submissions
-    function displaySubmissions(){
-
-        jsonOBJ = {'request': 'all'}
-
-        fetch(url + '/getsubmissions', {
-            method: 'POST',
-            mode: 'cors', // no-cors, cors, *same-origin
-            cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-            credentials: 'omit', // include, *same-origin, omit
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            redirect: 'follow', // manual, *follow, error
-            referrer: 'no-referrer', // no-referrer, *client
-            body: JSON.stringify(jsonOBJ), // body data type must match "Content-Type" header
-        }).then(response => {
-            response.json().then(function (json) {
-                Object.keys(json).forEach(function(key) {
-                    $('#submitted-games').prepend('<h1>Submitted Games</h1><h3>' + json[key] + ' by ' + key + '</h3>')
-                })
-            })
-    })
-    }
-
-    let form = document.getElementById("submission")
-    $('#submission').submit(function(e) {
-        e.preventDefault();
-    });
+    // Choose destination of HTTP request
+    // let url = "https://brainsatplay.azurewebsites.net/" // Must be modified for OMN
+    let url = "http://localhost"
 
     // Submit to MongoDB
-    $("#SubmitGame").click(function(){
-        let game = document.getElementById('gameinput').value
-        $('#submission').empty()
-        $('#submission').prepend('<h1>' + 'Grabbing files. Please wait...' + '</h1>')
-        getSubmissions(game)
-    });
+    $("#submit").click(function(){
+        let jsonObj = {}
+        var sub = $('#feedback').serializeArray()
+        for (var i = 0 ; i < sub.length; i++) {
+            jsonObj[sub[i].name] = sub[i].value;
+        }
 
-    // Grab submissions
-    function getSubmissions(name) {
-
-        jsonOBJ = {'gamename': name}
-
-        fetch(url + '/getsubmissions', {
-            method: 'POST',
+        fetch(url + '/submit', {
+            method: 'POST', // Using POST request to create a new resource in the database
             mode: 'cors', // no-cors, cors, *same-origin
             cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
             credentials: 'omit', // include, *same-origin, omit
@@ -100,43 +88,9 @@
             },
             redirect: 'follow', // manual, *follow, error
             referrer: 'no-referrer', // no-referrer, *client
-            body: JSON.stringify(jsonOBJ), // body data type must match "Content-Type" header
-        }).then(response => {
-            response.json().then(function (json) {
-                    $('#submission').remove()
-                    if (json.error){
-                        $('#content').prepend('<h1>' + json.error + '</h1>')
-                    } else {
-                        $('#content').prepend(
-                            "<h1 id='game-name'></h1>"+
-                            "<h3 id='team-name'></h1>"+
-                            "<i id='team-members'></i>"+
-                            "<p id='game-prompt'></p>"+
-                            "<p id='game-description'></p>"+
-                            "<img id='game-image'>"+
-                            "<div id='additional-images'></div>"
-                        )
-
-                        Object.keys(json).forEach(function(key) {
-                            var doc = json[key];
-                            document.getElementById("team-name").innerHTML=doc["team-name"];
-                            document.getElementById("team-members").innerHTML=doc["team-members"];
-                            document.getElementById("game-name").innerHTML=doc["game-name"];
-                            document.getElementById("game-prompt").innerHTML=doc["game-prompt"];
-                            document.getElementById("game-description").innerHTML=doc["game-description"];
-                            document.getElementById("game-image").src=doc["game-image"];
-                            for (img in doc["additional-images"]){
-                                $('#additional-images').prepend('<img src=' + doc["additional-images"][img] + ' />')
-                            }
-                        });
-                    }
-                }
-            )
-        });
-    };
-
-
+            body: JSON.stringify(jsonObj), // body data type must match "Content-Type" header
+        })
+    });
 </script>
-
 </body>
 </html>

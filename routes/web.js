@@ -1,25 +1,18 @@
 const express = require("express");
 const router = express.Router();
 const homeController = require("../controllers/home");
-const uploadController = require("../controllers/upload");
 const submitController = require("../controllers/submit");
-const getFileController = require("../controllers/getFile");
-const getSubmissionsController = require("../controllers/getSubmissions");
+const getDataController = require("../controllers/getData");
 
 
 
 let routes = app => {
   router.get("/", homeController.getHome);
 
-  router.post("/submit", submitController.submitGame);
+  router.post("/submit", submitController.submitAllFeedback);
 
-  router.post("/upload", uploadController.uploadFiles);
-
-    router.get('/getsubmissions', homeController.getHome);
-  router.post("/getsubmissions", getSubmissionsController.getSubmissions);
-
-
-
+  router.get('/getdata', homeController.getHome);
+  router.post("/getdata", getDataController.getData);
 
   return app.use("/", router);
 };

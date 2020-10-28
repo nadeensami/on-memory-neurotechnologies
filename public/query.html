@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/site.css">
+    <title>User Data — On Memory Neurotechnologies</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+</head>
+<body onload='displayData()'>
+<div id="app">
+    <div id="nav" class="bar">
+        <a href="index.html">Home</a>
+        <a href="query.html">User Queries</a>
+    </div>
+    <div class="break"></div>
+    <div class="head bar">
+        <h1>User Data</h1>
+        <h3>On Memory Neurotechnologies</h3>
+    </div>
+    <div class="break"></div>
+    <section id='content'>
+        <form id='feedback'
+              enctype="multipart/form-data"
+        >
+            <div id="prev_readers"></div>
+            <div id="get_img" class="form-section">
+                <h3>Get Feedback by Reader Email</h3>
+                <div class="break"></div>
+                <input type="text" id="emailinput" name="emailinput" value="" placeholder='Try "gflynn@usc.edu"'/>
+            </div>
+            <button id="GetFeedback" class="form-button" type="submit" form="feedback" value="GetFeedback"><div class="icon"><i class="fas fa-paper-plane fa-2x"></i></div>Get Feedback</button>
+        </form>
+    </section>
+</div>
+
+<script>
+
+    // Choose destination of HTTP request
+    // let url = "https://brainsatplay.azurewebsites.net/" // Must be modified for OMN
+    let url = "http://localhost"
+
+    // Dispay data
+    function displayData(){
+
+        jsonOBJ = {'request': 'reader'}
+
+        fetch(url + '/getdata', {
+            method: 'POST',
+            mode: 'cors', // no-cors, cors, *same-origin
+            cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+            credentials: 'omit', // include, *same-origin, omit
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            redirect: 'follow', // manual, *follow, error
+            referrer: 'no-referrer', // no-referrer, *client
+            body: JSON.stringify(jsonOBJ), // body data type must match "Content-Type" header
+        }).then(response => {
+            response.json().then(function (json) {
+                Object.keys(json).forEach(function(key) {
+                    $('#prev_readers').prepend('<h1>Readers</h1><h3>' + key + '</h3>')
+                })
+            })
+    })
+    }
+
+    let form = document.getElementById("feedback")
+    $('#feedback').submit(function(e) {
+        e.preventDefault();
+    });
+
+    // Submit to MongoDB
+    $("#GetFeedback").click(function(){
+        let reader = document.getElementById('prev_readers').value
+        $('#feedback').empty()
+        $('#feedback').prepend('<h1>' + 'Grabbing reader feedback. Please wait...' + '</h1>')
+        getData(reader)
+    });
+
+    // Grab data
+    function getData(reader) {
+
+        console.log(reader)
+
+        jsonOBJ = {'reader': reader}
+
+        fetch(url + '/getdata', {
+            method: 'POST',
+            mode: 'cors', // no-cors, cors, *same-origin
+            cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+            credentials: 'omit', // include, *same-origin, omit
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            redirect: 'follow', // manual, *follow, error
+            referrer: 'no-referrer', // no-referrer, *client
+            body: JSON.stringify(jsonOBJ), // body data type must match "Content-Type" header
+        }).then(response => {
+            console.log('response: ' + response)
+            response.json().then(function (json) {
+                    $('#feedback').remove()
+                    if (json.error){
+                        $('#content').prepend('<h1>' + json.error + '</h1>')
+                    } else {
+                        $('#content').prepend(
+                            "<h1 id='reader'></h1>"
+                        )
+
+                        Object.keys(json).forEach(function(key) {
+                            var doc = json[key];
+                            document.getElementById("emailinput").innerHTML=doc["emailinput"];
+                        });
+                    }
+                }
+            )
+        });
+    };
+
+
+</script>
+
+</body>
+</html>
