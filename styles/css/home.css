@@ -8,7 +8,9 @@
 
 section {
   height: 100vh;
-  width: 100vw;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
@@ -42,9 +44,14 @@ nav ul a {
 }
 
 .header-page {
-  justify-content: center;
+  text-align: center;
+  text-justify: center;
 }
 
 .content-page {
   justify-items: center;
+}
+
+#landing-page {
+  background-color: rgb(176, 176, 176);
 }
